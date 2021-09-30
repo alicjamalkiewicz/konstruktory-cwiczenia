@@ -6,6 +6,7 @@ public class Dog extends Animals {
 
     //konstruktor tylko dla klasy Dog
     Dog(String name, String breed){
+        super(null, null);
         this.name = name;
         this.breed = breed;
     }
@@ -15,4 +16,23 @@ public class Dog extends Animals {
         this.breed = breed;
     }
 
+    Dog(String phylum){
+        super(phylum);;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
 }

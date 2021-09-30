@@ -4,7 +4,7 @@ public class Animals {
     //pola klasy
     private String kingdom;
     private String order;
-//    private String phylum;
+    private String phylum;
 
 
     //konstruktor
@@ -13,9 +13,31 @@ public class Animals {
         this.order = order;
     }
 
-//    Animals(String phylum) {
-//        this.phylum = phylum;
-//    }
+    Animals(String phylum) {
+        this.phylum = phylum;
+    }
 
+    public String getKingdom() {
+        return kingdom;
+    }
 
+    public void setKingdom(String kingdom) {
+        this.kingdom = kingdom;
+    }
+
+    public String getOrder() {
+        return order;
+    }
+
+    public void setOrder(String order) {
+        this.order = order;
+    }
+
+    public String getPhylum() {
+        return phylum;
+    }
+
+    public void setPhylum(String phylum) {
+        this.phylum = phylum;
+    }
 }
